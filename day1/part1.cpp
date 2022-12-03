@@ -8,7 +8,7 @@ int main()
 {
   std::string filename = "input.txt";
 
-  std::ostringstream dosString(std::ios::out | std::ios::binary);
+//  std::ostringstream dosString(std::ios::out | std::ios::binary);
   std::ifstream inFile(filename.c_str());
 
   int total = 0;

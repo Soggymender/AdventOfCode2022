@@ -31,30 +31,30 @@ int accumulate(int max[]) {
 
 int main()
 {
-  std::string filename = "input.txt";
+    std::string filename = "input.txt";
 
-  std::ostringstream dosString(std::ios::out | std::ios::binary);
-  std::ifstream inFile(filename.c_str());
+//    std::ostringstream dosString(std::ios::out | std::ios::binary);
+    std::ifstream inFile(filename.c_str());
 
-  int total = 0;
-  int max[3] = {0, 0, 0};
+    int total = 0;
+    int max[3] = {0, 0, 0};
 
-  std::string line;
-  while(std::getline(inFile, line)) {
+    std::string line;
+    while(std::getline(inFile, line)) {
 
-    if (line.length() == 0) {
+        if (line.length() == 0) {
 
-        replaceMax(total, max);
-        total = 0;
-        continue;
+            replaceMax(total, max);
+            total = 0;
+            continue;
+        }
+
+        int num = stoi(line);
+
+        total += num;
     }
-
-    int num = stoi(line);
-
-    total += num;
-  }
 
     std::cout << accumulate(max);
 
-  return 0;
+    return 0;
 }
