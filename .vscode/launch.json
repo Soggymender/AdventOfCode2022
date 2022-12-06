@@ -8,7 +8,7 @@
     "name": "aoc2022",
     "type": "cppvsdbg",
     "request": "launch",
-    "program": "C:\\development\\aoc\\2022\\day3\\day3.exe",
+    "program": "C:\\development\\aoc\\2022\\day4\\day4_2.exe",
     "symbolSearchPath": "C:\\Symbols;C:\\SymbolDir2",
     "externalConsole": true,
     "logging": {
